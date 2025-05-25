@@ -57,10 +57,10 @@ get_storage_path() {
 
     case "$os_name" in
         Darwin)  # macOS
-            storage_path="$HOME/Library/Application Support/Code/User/globalStorage/storage.json"
+            storage_path="$HOME/Library/Application Support/Cursor/User/globalStorage/storage.json"
             ;;
         Linux)
-            storage_path="$HOME/.config/Code/User/globalStorage/storage.json"
+            storage_path="$HOME/.config/Cursor/User/globalStorage/storage.json"
             ;;
         MINGW*|MSYS*|CYGWIN*)  # Windows
             local appdata="${APPDATA:-}"
@@ -68,7 +68,7 @@ get_storage_path() {
                 log_error "APPDATA environment variable not found"
                 exit 1
             fi
-            storage_path="$appdata/Code/User/globalStorage/storage.json"
+            storage_path="$appdata/Cursor/User/globalStorage/storage.json"
             ;;
         *)
             log_error "Unsupported operating system: $os_name"

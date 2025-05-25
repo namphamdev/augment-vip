@@ -56,11 +56,11 @@ get_db_paths() {
     case "$os_name" in
         Darwin)  # macOS
             local home_dir="$HOME"
-            db_paths+=("$home_dir/Library/Application Support/Code/User/globalStorage/state.vscdb")
+            db_paths+=("$home_dir/Library/Application Support/Cursor/User/globalStorage/state.vscdb")
             ;;
         Linux)
             local home_dir="$HOME"
-            db_paths+=("$home_dir/.config/Code/User/globalStorage/state.vscdb")
+            db_paths+=("$home_dir/.config/Cursor/User/globalStorage/state.vscdb")
             ;;
         MINGW*|MSYS*|CYGWIN*)  # Windows
             local appdata="${APPDATA:-}"
@@ -68,7 +68,7 @@ get_db_paths() {
                 log_error "APPDATA environment variable not found"
                 exit 1
             fi
-            db_paths+=("$appdata/Code/User/globalStorage/state.vscdb")
+            db_paths+=("$appdata/Cursor/User/globalStorage/state.vscdb")
             ;;
         *)
             log_error "Unsupported operating system: $os_name"

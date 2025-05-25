@@ -1,7 +1,7 @@
 ### Info: Use the python version for more capabalities
 You can use this one click or go to the python branch
 ```bash
-curl -fsSL https://raw.githubusercontent.com/azrilaiman2003/augment-vip/python/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -fsSL https://raw.githubusercontent.com/namphamdev/augment-vip/python/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 # Augment VIP
@@ -33,7 +33,7 @@ A utility toolkit for Augment VIP users, providing tools to manage and clean VS 
 You can install with a single command using curl:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/azrilaiman2003/augment-vip/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -fsSL https://raw.githubusercontent.com/namphamdev/augment-vip/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 This will:
